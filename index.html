@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Ronald - Webflow Template Clone</title>
 </head>
 <body>
     <section class="fixed">
-        <div class="container">
+        <div class="side_nav">
             <a href="index.html" class="logo">
                 <img src="./assets/logo/logo.svg" alt="Ronald Logo" />
             </a>
@@ -53,13 +54,13 @@
         </div>
     </section>
     <main class="scroll">
-        <section class="row" id="home">
-            <div class="col">
+        <section class="row hero" id="home">
+            <div class="col-6">
                 <h1>I'm Ronald boyd.</h1>
                 <p>Award-winning design lead.</p>
-                <a href="index.html#footer" class="btn">Get in touch</a>
+                <a href="index.html" class="btn">Get in touch</a>
             </div>
-            <div class="col">
+            <div class="col-6">
                 <div class="img_container">
                     <img src="./assets/svg/hero-image.svg" alt="Ronald boyd" />
                     <div class="exp">
@@ -73,10 +74,13 @@
             <div class="grid">
                 <div class="grid_item">
                     <div class="portfolio_img">
-                        <img src="./assets/portfolio/62c126515931985344736373_wrok-03.jpg" alt="Wall painting multicolor"/>
+                        <a href="#" class="portoflio_link">
+                            <img src="./assets/portfolio/62c126515931985344736373_wrok-03.jpg" alt="Wall painting multicolor"/>
+                        </a>
+                        
                     </div>
                     <div class="content">
-                        <h3 class="portfolio_title">Wall painting multicolor</h3>
+                        <h3 class="portfolio_title"><a href="#" class="portoflio_link">Wall painting multicolor</a></h3>
                         <a href="#" class="portoflio_link">View work</a>
                     </div>
                 </div>
@@ -112,12 +116,12 @@
         <section class="profile" id="profile">
             <h2 class="section_title">Profile.</h2>
             <div class="row">
-                <div class="col">
+                <div class="col-6">
                     <div class="img_container">
                         <img src="./assets/svg/about.svg" alt="Ronald boyd" />
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-6">
                     <div class="bio">
                         <h3>Dwayne Tucker</h3>
 
@@ -133,90 +137,107 @@
         </section>
         <section class="resume" id="resume">
             <div class="row">
-                <div class="col">
+                <div class="col-6">
                     <h2 class="section_title">Awards</h2>
                     <ul class="list">
                         <li class="list_item">
-                            <div class="icon_img">
-                                <img src="./assets/svg/trophy.svg" alt="" />
+                            <div class="list_title">
+                                <div class="icon_img">
+                                    <img src="./assets/svg/trophy.svg" alt="" />
+                                </div>
+                                <span class="item_title">
+                                    CSS design awards
+                                </span>
                             </div>
-                            <span class="item_title">
-                                CSS design awards
-                            </span>
+                            
                             <span class="item_description">Letraset sheets containing Lorem Ipsum passages.</span>
                         </li>
                         <li class="list_item">
-                            <div class="icon_img">
-                                <img src="./assets/svg/trophy.svg" alt="" />
+                            <div class="list_title">
+                                <div class="icon_img">
+                                    <img src="./assets/svg/trophy.svg" alt="" />
+                                </div>
+                                <span class="item_title">Cool site of the day
+                                </span>
                             </div>
-                            <span class="item_title">Cool site of the day
-                            </span>
                             <span class="item_description">Letraset sheets containing Lorem Ipsum passages.</span>
                         </li>
                         <li class="list_item">
-                            <div class="icon_img">
-                                <img src="./assets/svg/trophy.svg" alt="" />
+                            <div class="list_title">
+                                <div class="icon_img">
+                                    <img src="./assets/svg/trophy.svg" alt="" />
+                                </div>
+                            
+                                <span class="item_title">
+                                    
+                                    Best artist website
+                                </span>
                             </div>
-                            <span class="item_title">
-                                
-                                Best artist website
-                            </span>
                             <span class="item_description">Letraset sheets containing Lorem Ipsum passages.</span>
                         </li>
                         <li class="list_item">
-                            <div class="icon_img">
-                                <img src="./assets/svg/trophy.svg" alt="" />
+                            <div class="list_title">
+                                <div class="icon_img">
+                                    <img src="./assets/svg/trophy.svg" alt="" />
+                                </div>
+                                <span class="item_title">
+                                    
+                                    Interactive awards
+                                </span>
                             </div>
-                            <span class="item_title">
-                                
-                                Interactive awards
-                            </span>
                             <span class="item_description">Letraset sheets containing Lorem Ipsum passages.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-6">
                     <h2 class="section_title">Education & Experience</h2>
                     <ul class="list">
                         <li class="list_item">
-                            <div class="icon_img">
-                                <img src="./assets/svg/heart.svg" alt="" />
-                            </div>
-                            
-                            <span class="item_title">
+                            <div class="list_title">
+                                <div class="icon_img">
+                                    <img src="./assets/svg/heart.svg" alt="" />
+                                </div>
+                                <span class="item_title">
                                 
-                                University of London
-                            </span>
+                                    University of London
+                                </span>
+                            </div>
                             <span class="item_description">Letraset sheets containing Lorem Ipsum passages.</span>
                         </li>
                         <li class="list_item">
-                            <div class="icon_img">
-                                <img src="./assets/svg/heart.svg" alt="" />
+                            <div class="list_title">
+                                <div class="icon_img">
+                                    <img src="./assets/svg/heart.svg" alt="" />
+                                </div>
+                                <span class="item_title">
+                                    
+                                    Empire State University
+                                </span>
                             </div>
-                            <span class="item_title">
-                                
-                                Empire State University
-                            </span>
                             <span class="item_description">Letraset sheets containing Lorem Ipsum passages.</span>
                         </li>
                         <li class="list_item">
-                            <div class="icon_img">
-                                <img src="./assets/svg/heart.svg" alt="" />
+                            <div class="list_title">
+                                <div class="icon_img">
+                                    <img src="./assets/svg/heart.svg" alt="" />
+                                </div>
+                                <span class="item_title">
+                                    
+                                    Content Writer - Designs Ltd
+                                </span>
                             </div>
-                            <span class="item_title">
-                                
-                                Content Writer - Designs Ltd
-                            </span>
                             <span class="item_description">Letraset sheets containing Lorem Ipsum passages.</span>
                         </li>
                         <li class="list_item">
-                            <div class="icon_img">
-                                <img src="./assets/svg/heart.svg" alt="" />
+                            <div class="list_title">
+                                <div class="icon_img">
+                                    <img src="./assets/svg/heart.svg" alt="" />
+                                </div>
+                                <span class="item_title">
+                                    
+                                    Senior Developer - Invision Studio
+                                </span>
                             </div>
-                            <span class="item_title">
-                                
-                                Senior Developer - Invision Studio
-                            </span>
                             <span class="item_description">Letraset sheets containing Lorem Ipsum passages.</span>
                         </li>
                     </ul>
@@ -231,8 +252,8 @@
         </section>
         <section class="blog" id="blog">
             <h2 class="section_title">Latest blog.</h2>
-            <div class="row">
-                <div class="col">
+            <div class="blog_grid">
+                <div class="blog_grid_item">
                     <div class="blog_item">
                         <a href="#" class="blog_link">
                             <div class="blog_item_img">
@@ -243,7 +264,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="blog_grid_item">
                     <div class="blog_item">
                         <a href="#" class="blog_link">
                             <div class="blog_item_img">
@@ -254,7 +275,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="blog_grid_item">
                     <div class="blog_item">
                         <a href="#" class="blog_link">
                             <div class="blog_item_img">
@@ -270,7 +291,7 @@
         <section class="contact" id="contact">
             <h2 class="section_title">Contact.</h2>
             <div class="row">
-                <div class="col">
+                <div class="col-6">
                     <form action="" method="" class="form">
                         <input 
                         type="text" 
@@ -291,7 +312,7 @@
                         <input type="submit" value="Submit" class="btn" />
                     </form>
                 </div>
-                <div class="col">
+                <div class="col-6">
                     <div class="container">
                         <h3>Dwayne Tucker</h3>
                         <div class="contact_box">
