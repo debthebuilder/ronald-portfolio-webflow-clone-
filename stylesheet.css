@@ -1,3 +1,9 @@
+:root {
+    --bgColor : #D561FE;
+    --accent: #ffcb46;
+    --black: black;
+    --borderRadius: 5px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +12,15 @@
 }
 body {
     position: relative;
-    background-color: plum;
+    background-color: var(--bgColor);
     font-family: 'Roboto', sans-serif;
 }
 a {
-    color: black;
+    color: var(--black);
 }
 
 a:hover {
-    color: #ffcb46;
+    color: var(--accent);
 }
 
 .fixed {
@@ -42,11 +48,11 @@ a:hover {
     
 }
 .nav_link {
-    color: black;
+    color: var(--black);
 }
 .social_icon {
    margin-right: 20px;
-   color: black;
+   color: var(--black);
 }
 .social_icon a {
     display: inline-block;
@@ -57,7 +63,7 @@ a:hover {
 }
 .scroll section {
     margin: 5% 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--black);
     padding-bottom: 10%;
 }
 .section_title {
@@ -68,23 +74,45 @@ a:hover {
     padding-bottom: 40px;
 }
 .btn {
-    border: 1px solid black;
+    border: 1px solid var(--black);
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #ffcb46;
-    border-radius: 5px;
+    background-color: var(--accent);
+    border-radius: var(--borderRadius);
     font-weight: 500;
 }
 h1 {
     font-size: 100px;
     line-height: 120px;
 }
-
+.hero {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
 .hero p {
     font-size: 26px;
     line-height: 31px;
     font-weight: 500;
     margin-bottom: 30px;;
+}
+.hero_img_container {
+    position: relative;
+}
+.exp {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+.exp_years {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
 }
 .row {
     width: 100%;
@@ -115,8 +143,8 @@ h1 {
 }
 
 .portfolio_img img {
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 2px solid var(--black);
+    border-radius: var(--borderRadius);
 }
 img {
     width: 100%;
@@ -157,9 +185,86 @@ img {
     font-style: italic;
 }
 
+.img_container {
+    background-color: var(--accent);
+    border: 2px solid var(--black);
+    border-radius: var(--borderRadius);
+}
+
+.profile .row {
+    align-items: center;
+}
+
+.profile .col-6 {
+    height: 100%;
+    padding: 10px;
+}
+.bio h3, .bio p {
+    margin-bottom: 20px;
+}
 .blog_grid {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
+}
+
+.blog_item_img img {
+    border: 2px solid black;
+    border-radius: var(--borderRadius);
+}
+
+.input_box {
+    display: block;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--black);
+    border-radius: var(--borderRadius);
+    color: var(--black);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.input_box::placeholder {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 14px;
+}
+.input_box:focus {
+    border: 2px solid var(--accent);
+    outline: none;   
+}
+
+.contact .col-6 {
+    padding: 0 20px;
+}
+.container {
+    width: 80%;
+    height: 100%;
+    border: 2px solid var(--black);
+    padding: 10px 20px;
+    border-radius: var(--borderRadius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container h3 {
+    margin-bottom: 40px;
+    font-size: 24px
+}
+.contact_icon {
+    width: 50px;
+}
+.contact_link, address {
+    font-size: 1.2em;
+}
+.contact_item {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
 }

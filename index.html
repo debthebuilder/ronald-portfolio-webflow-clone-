@@ -56,12 +56,12 @@
     <main class="scroll">
         <section class="row hero" id="home">
             <div class="col-6">
-                <h1>I'm Ronald boyd.</h1>
+                <h1>I'm <br/>Ronald <br/>boyd.</h1>
                 <p>Award-winning design lead.</p>
                 <a href="index.html" class="btn">Get in touch</a>
             </div>
             <div class="col-6">
-                <div class="img_container">
+                <div class="hero_img_container">
                     <img src="./assets/svg/hero-image.svg" alt="Ronald boyd" />
                     <div class="exp">
                         <span class="exp_years">5+ years experience</span>
@@ -297,18 +297,22 @@
                         type="text" 
                         name="name" 
                         placeholder="Name"
-                        class="input_box" />
+                        class="input_box" 
+                        required/>
                         <input 
                         type="email" 
                         name="email_address" 
                         placeholder="Email address"
-                        class="input_box" />
+                        class="input_box"
+                        required />
+
                         <input 
                         type="tel" 
                         name="phone_number" 
                         placeholder="Phone number"
-                        class="input_box" />
-                        <textarea name="comment" placeholder="Comment here" class="input_box text_box"></textarea>
+                        class="input_box"
+                        required />
+                        <textarea name="comment" placeholder="Comment here" class="input_box text_box" rows="8"></textarea>
                         <input type="submit" value="Submit" class="btn" />
                     </form>
                 </div>
